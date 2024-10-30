@@ -145,6 +145,10 @@ implement_kems! {
     ("ml_kem") MlKem1024: OQS_KEM_alg_ml_kem_1024,
 }
 
+//("ml_kem") MlKem512Ipd: OQS_KEM_alg_ml_kem_512_ipd,
+//("ml_kem") MlKem768Ipd: OQS_KEM_alg_ml_kem_768_ipd,
+//("ml_kem") MlKem1024Ipd: OQS_KEM_alg_ml_kem_1024_ipd,
+
 impl Algorithm {
     /// Returns true if this algorithm is enabled in the linked version
     /// of liboqs
