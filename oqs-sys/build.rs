@@ -23,7 +23,11 @@ fn generate_bindings(includedir: &Path, headerfile: &str, filter: &str) {
         .allowlist_recursively(false)
         .allowlist_type(filter)
         .allowlist_function(filter)
+        .allowlist_type("secure_store_sk")
+        .allowlist_type("lock_key")
+        .allowlist_type("unlock_key")
         .allowlist_var(filter)
+        .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
         // Use core and libc
         .use_core()
         .ctypes_prefix("::libc")
