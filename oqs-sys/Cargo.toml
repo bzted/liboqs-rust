@@ -39,9 +39,12 @@ kyber = []
 ntruprime = []
 ml_kem = []
 # algorithms: Signature schemes
-sigs = ["dilithium", "falcon", "sphincs"]
+sigs = ["cross","dilithium", "falcon", "mayo","ml_dsa","sphincs"]
+cross = []
 dilithium = []
 falcon = []
+mayo = []
+ml_dsa = []
 sphincs = []
 
 [package.metadata.docs.rs]
